@@ -1,0 +1,340 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+    background:url('assets/bg.jpg');
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: column;
+    height: 3000px;
+    color: white;
+    
+
+}
+
+.navbar {
+    padding: 15px 30px;
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    top: 10px;
+    left: 300px;
+    right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+/* BUTTON GROUP STYLING */
+.nav-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-buttons button {
+    padding: 10px;
+    background: transparent;
+    color: rgb(180, 180, 180);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.nav-buttons button:hover {
+    border: 2px solid bisque;
+    color: white;
+    transform: scale(1.1);
+    color: rgb(181, 148, 107);
+    border-radius: 10px;
+    
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    max-width: 400px; /* optional cap for huge screens */
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 15px 14px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    outline: none;
+    transition: background-color 0.3s ease;
+    margin-left: 40px;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* SOCIAL ICON STYLING */
+.icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgb(93, 90, 90);
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+    border-radius: 5px;
+    
+}
+
+.icon-btn:hover {
+    background-color: rgb(143, 123, 100);
+}
+
+.icon-btn img {
+    width: 110%;
+    height: 110%;
+    
+    transition: transform 0.3s ease;
+}
+
+.icon-btn img:hover{
+    transform: scale(1.05);
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 100px;
+    margin-top: 10%;
+    align-items: center;
+    width: 1400px;
+    position: fixed;
+    
+}
+.social-icons{
+    display: flex;
+    gap: 50px;
+    
+}
+.social-icons button{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    transition: all 0.1s ease-in;
+    
+    
+}
+.social-icons button:hover{
+    
+    background: transparent;
+    background-color: bisque;
+    
+    border: 2px solid bisque;
+}
+.social-icons button img{
+    width: 100%;
+    background-color: rgb(189, 182, 39);
+    
+}
+.social-icons button img:hover{
+    background-color: bisque;
+    
+    
+}
+   
+    
+
+.content{
+    flex: 60%;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 650px;
+    
+}
+.content h2{
+    color: rgb(189, 182, 39);
+    font-family: "Roboto";
+    font-size: 60px;
+    margin-bottom: 0;
+
+}
+.content p{
+    color: rgb(150, 129, 103);
+    font-family: 'Matangi';
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.welcome-btn{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(46, 110, 50);
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease;
+    
+}
+.welcome-btn:hover{
+    background: transparent;
+    color: bisque;
+    border: 1px solid bisque;
+    transform: scale(1.03);
+}
+.profile{
+    width: 200px;
+    padding: 30px;
+    flex: 0 0 40%;
+    overflow: hidden;
+    
+    
+    
+}
+.profile img{
+  width: 100%;       
+  aspect-ratio: 1/1; 
+  object-fit: cover; 
+  border-radius: 8px;  
+  border-radius: 50%; 
+  padding: 0px;
+  
+    
+}
+.spacer{
+    height: 1500px;
+    width: 100%;
+}
+.keypoints{
+    height: 2500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background:url('assets/bg2.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    z-index: 2;
+    
+}
+
+.about{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+
+}
+.about p{
+    font-size: 50px;
+    transition: all 0.8s ease;
+    padding: 20px;
+}
+.about p:hover{
+    background: transparent;
+    border: 1px solid bisque;
+    color: bisque;
+    border-radius: 20px;
+
+
+}
+.about img{
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 20px;
+    
+}
+.about-buttons{
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.about-buttons button{
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(46, 110, 50);
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease;
+    
+}
+.about-buttons  button:hover{
+    background: transparent;
+    color: bisque;
+    border: 1px solid bisque;
+    transform: scale(1.03);
+}
+.about-content{
+    flex: 1;
+    
+    padding: 250px;
+    
+    
+}
+.about-content p{
+    
+    padding: 20px;
+    font-size: 36px;
+    font-family:'Matangi';
+    text-align: center;
+    border-radius: 30p;   
+    transition: all 0.3s ease;
+    
+}
+.about-content p:hover{
+    background-color: rgba(0, 0, 0, 0.345);
+    border: 2px solid rgb(161, 126, 82);
+    color: rgb(198, 171, 18);
+    border-radius: 15px;
+    padding: 40px;
+}
+.ending{
+    background-color: lightblue;
+    z-index: 3;
+    position: sticky;
+    height: 100px;
+    top: 10px;
+    left: 0px;
+    right: 0px
+}
