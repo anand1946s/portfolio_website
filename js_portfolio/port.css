@@ -15,108 +15,83 @@ body{
 
 }
 
-.navbar {
-    padding: 15px 30px;
-    background-color: rgb(20, 20, 20);
+.navbar{
     position: fixed;
-    top: 10px;
-    left: 300px;
-    right: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0px 0px 30px 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    z-index: 100;
-}
-
-/* BUTTON GROUP STYLING */
-.nav-buttons {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-buttons button {
-    padding: 10px;
+    height: 100px;
     background: transparent;
-    color: rgb(180, 180, 180);
-    border: none;
-    outline: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.6s ease;
-}
-
-.nav-buttons button:hover {
-    border: 2px solid bisque;
-    color: white;
-    transform: scale(1.1);
-    color: rgb(181, 148, 107);
-    border-radius: 10px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+    
     
 }
-
-.search-bar {
+.extras{
     flex: 1;
     display: flex;
-    justify-content: center;
+    gap: 100px;
+    margin-left: 100px;
     align-items: center;
-    margin: 0 30px;
-    max-width: 400px; /* optional cap for huge screens */
-}
 
-.search-bar input{
-    width: 100%;
-    padding: 15px 14px;
-    font-size: 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.08);
-    color: white;
-    outline: none;
-    transition: background-color 0.3s ease;
-    margin-left: 40px;
-}
-
-.search-bar input[type="text"]::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-
-/* SOCIAL ICON STYLING */
-.icons {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
-.icon-btn {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: rgb(20, 20, 20);
     
+}
+.extras button{
+    width: 50px;
+    height: 40px;
+    background: transparent;
+    color: bisque;
+    outline: 0px;
+    border: 0px;
+    font-size: 25px;
+    padding: auto;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 0;
-    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.extras button:hover{
     
-}
-
-.icon-btn:hover {
-    transform: scale(1.06);
-}
-
-.icon-btn img {
-    width: 110%;
-    height: 110%;
-    
-    transition: transform 0.3s ease;
-}
-
-.icon-btn img:hover{
+    color: rgb(189, 182, 39);
     transform: scale(1.05);
+
 }
+.darkmode{
+    background-color: lightcoral;
+    height: 150px;
+    width: 150px;
+}
+.darkmode img{
+    width: 100%;
+}
+.nav-buttons{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+.nav-buttons button{
+    
+  
+    height: 60px;
+    background: transparent;
+    color: bisque;
+    outline: 0px;
+    border: 0px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: auto;
+    text-align: center;
+    margin: 0px;
+
+}
+.nav-buttons button:hover{
+    color: rgb(189, 182, 39);
+    transform: scale(1.05);
+    border-radius: 10px;
+
+}
+
 
 .intro{
     display: flex;
@@ -149,7 +124,7 @@ body{
     background: transparent;
     background-color: bisque;
     
-    border: 2px solid bisque;
+    border: 2px solid (150, 129, 103);
 }
 .social-icons button img{
     width: 100%;
@@ -157,7 +132,7 @@ body{
     
 }
 .social-icons button img:hover{
-    background-color: bisque;
+    background-color: (150, 129, 103);
     
     
 }
